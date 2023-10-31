@@ -12,7 +12,7 @@ function main()
     let biggestNum = a2DArray[0][0]; // declare variable, set it to 0
     for ( let row = 0;row<a2DArray.length;row++){
         console.log(`=======row${row}=======`);//prints your row
-        for(let col = 0;col< a2DArray[row].length; col++){
+        for(let col = 0;col< a2DArray[row].length; col++){ //check length inside of row as well
             console.log(a2DArray[row][col]);// prints the column inside the row
             if (a2DArray[row][col] > biggestNum){
                 biggestNum = a2DArray[row][col];// finds the biggest number by comparing each row and column to previous one.
